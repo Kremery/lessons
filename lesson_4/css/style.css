@@ -1,0 +1,134 @@
+@import url('reset.css');
+
+/* ---------------- */
+/*----------------- Підключення шрифтів ----------------------- */
+
+/* Google Fonts */
+/* serif тип шрифту */
+@import url(https://fonts.googleapis.com/css?family=Solitreo:regular&display=swap);
+/* serif тип шрифту */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:regular,700,italic&display=swap);
+/* sans-serif */
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+/* Підключення вручну */
+/* sans-serif */
+@font-face {
+  font-family: 'Circular Spotify';
+  src: url('../fonts/CircularSpotifyText-Bold.woff2') format('woff2'),
+      url('../fonts/CircularSpotifyText-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Circular Spotify';
+  src: url('../fonts/CircularSpotifyText-Book.woff2') format('woff2'),
+      url('../fonts/CircularSpotifyText-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* cursive тип шрифту */
+@font-face {
+  font-family: 'Abigan';
+  src: url('../fonts/AbiganItalic-Italic.woff2') format('woff2'),
+      url('../fonts/AbiganItalic-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Abigan';
+  src: url('../fonts/AbiganBold-Bold.woff2') format('woff2'),
+      url('../fonts/AbiganBold-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: 'Roboto Serif', serif;
+  font-size: 22px;
+  color: black;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+[class*="__title"] {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  color: rgb(168, 20, 107);
+  font-weight: 700;
+}
+.wrapper {
+}
+.header p{
+  font-family: "Solitreo", serif;
+  font-size: 28px;
+  color: red;
+  text-align: left;
+  text-indent: 20px;
+}
+.main {
+
+}
+.block-1 {
+}
+.title {
+  text-align: center;
+  word-spacing: 20px;
+  font-family: "Poppins";
+}
+.photo-1 p{
+  font-family: 'Circular Spotify';
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #000, -2px -2px 2px red;
+}
+.block-2 {
+}
+.title-3 {
+  text-transform: capitalize;
+}
+.link li{
+  text-indent: 40px;
+}
+.link__item {
+}
+.block-2__text {
+}
+.about {
+}
+.about-1 {
+}
+.about-1__title {}
+
+.about-1__text {
+  font-family: 'Abigan';
+  font-style: italic;
+  word-spacing: 10px;
+}
+.about-2 {
+}
+.about-2__title {
+}
+.about-2__text {
+}
+.about-2__links li{
+  letter-spacing: 7px;
+}
+.about-3 {
+}
+.about-3__title {
+}
+.about-3__text {
+}
+
+.footer p{
+  text-align: right;
+}
