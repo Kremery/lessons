@@ -1,0 +1,167 @@
+@import url('reset.css');
+
+/* ---------------- */
+/*----------------- Підключення шрифтів ----------------------- */
+/* допиши &display=swap */
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,700&display=swap);
+
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+[class*="__title"] {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.12; /* 45/40 */
+  text-transform: capitalize;
+  color: #2E2E2E;
+}
+[class*="__subtitle"] {
+  font-size: 16px;
+  line-height: 1.56; /* 25/16 */
+  text-align: center;
+  color: #637381;
+}
+[class*="__item"] {
+  display: inline-block;
+}
+[class*="__body"] {
+  max-height: 500px;
+  overflow: auto;
+}
+body {
+  font-family: "Inter";
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  border: 3px dashed #e40909;
+  border-radius: 25px;
+}
+/* ------------------- */
+.icons {
+  margin-bottom: 80px; 
+}
+.icons__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.icons__title {
+  margin-bottom: 30px;
+}
+.icons__subtitle {
+  margin-bottom: 30px;
+}
+.icons__body {
+  text-align: center;
+  background-color: #f3e0e0;
+}
+.icons__items:not(:last-child) {
+  margin-bottom: 30px;
+}
+.icons__item {
+  padding: 50px;
+  vertical-align: middle;
+}
+.icons__item:not(:last-child) {
+  margin-right: 30px;
+}
+.icons__items:first-child>.icons__item:first-child {
+  background-color: #3056D3;
+  border-radius: 15px;
+}
+.icons__item img{
+  max-width: 100%;
+}
+.social .icons__item:hover {
+  transform: scale(1.8);
+}
+
+.white {
+  background-color: #3056D3;
+}
+
+.social {
+  border: 1px solid #3056D3;
+  border-radius: 30px;
+}
+
+/* -------------------- */
+.elements {
+  margin-bottom: 80px;
+}
+
+.elements__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.elements__title {
+  margin-bottom: 30px;
+}
+.elements__subtitle {
+  margin-bottom: 30px;
+}
+.elements__body {
+  text-align: center;
+  background: url('../img/elements/background.webp') center/cover no-repeat fixed;
+}
+.elements__item {
+  padding: 50px;
+  vertical-align: middle;
+}
+.elements__body>.elements__items>.elements__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ----------------------------- */
+.content__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content__title {
+  margin-bottom: 40px;
+}
+.content__subtitle {
+  margin-bottom: 50px;
+}
+.content__items {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content__items:not(:last-child) {
+  margin-bottom: 40px;
+}
+.content__item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.large .content__item {
+  width: 40%;}
+.small .content__item {
+  height: 440px;
+  overflow: hidden;
+}
+.content__item:not(:last-child) {
+  margin-right: 30px;
+}
+.content__item img {
+  width: 100%;
+}
+
+.small {
+  background-color: #a3df979a;
+}
+
+.medium {
+  background-color: #97d4df9a;
+}
+
+.large {
+  background-color: #ce97df9a;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
