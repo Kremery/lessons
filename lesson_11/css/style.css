@@ -1,0 +1,216 @@
+@import url('reset.css');
+@import url('common.css');
+
+/* ---------------- */
+/*----------------- Підключення шрифтів ----------------------- */
+
+/* Підключення вручну */
+
+/* допиши &display=swap */
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600&display=swap);
+
+[class*="__container"] {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Inter";
+  background-color: #d5dde4;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+/* ------------------------- */
+.header {
+  /* min-height: 100px; */
+  background: #FFFFFF;
+  /* line-height: 100px; */
+}
+.header__container {
+  position: relative;
+}
+.header__logo {
+  display: inline-block;
+  margin-right: 45px;
+}
+.header__logo img {
+  vertical-align: middle;
+}
+.header__menu {
+  display: inline-block;
+}
+.header__icons {
+  display: inline-block;
+  margin-left: 90px;
+}
+.header__icon {
+  display: inline-block;
+  position: relative;
+}
+.header__icon:not(:last-child) {
+  margin-right: 20px;
+}
+.header__icon img {
+  vertical-align: middle;
+}
+.header__icon:not(:first-child)::after {
+  content: "3";
+  display: inline-block;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  background-color: #3056D3;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  position: absolute;
+  left: 12px;
+  top: -2px;
+}
+.header__icon:last-child::after {
+  content: "1";
+}
+
+/* ----------navigation-------------- */
+.menu__item {
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5; /* 24/16 */
+  color: #212B36;
+  position: relative;
+}
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+.menu__item:first-child .menu__link {
+  padding: 10px 20px;
+}
+.menu__item:hover:not(:first-child) .menu__link{
+  color: #3056D3;
+}
+.menu__item:hover:first-child .menu__link{
+  background: #F4F7FF;
+  border-radius: 5px;
+}
+.menu__item:hover .menu__sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.menu__link {
+  display: inline-block;
+}
+.menu__item:first-child .menu__link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 13px;
+  width: 11px;
+  height: 6px;
+  background: url(../img/header/arrow.svg) center no-repeat;
+}
+.menu__sub-menu {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.sub-menu__items {
+  padding: 22px 0;
+  width: 180px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.sub-menu__item {
+  font-weight: 500;
+  color: #637381;
+  padding-left: 22px;
+  padding-right: 22px;
+  position: relative;
+}
+.sub-menu__item:hover {
+  color: #3056D3;
+}
+.sub-menu__item:hover .sub-menu__sub {
+  opacity: 1;
+  visibility: visible;
+}
+.sub-menu__item:not(:last-child) {
+  padding-bottom: 13px;
+}
+.sub-menu__link {
+  display: block;
+}
+.sub-menu__link_arrow {
+  position: relative;
+}
+.sub-menu__link_arrow::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-5px);
+  width: 6px;
+  height: 10px;
+  background: url(../img/header/arrow_blue.svg) 0 0 no-repeat;
+}
+.sub-menu__back {
+  height: 10px;
+  background: url(../img/header/icons/polygon.svg) 15px 3px no-repeat;
+}
+.sub-menu__sub {
+  width: 652px;
+  position: absolute;
+  left: 101%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.sub-sub-menu {
+  padding: 30px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.sub-sub-menu__column {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sub-sub-menu__column:not(:last-child) {
+  margin-right: 70px;
+}
+.sub-sub-menu__column:last-child {
+  max-width: 220px;
+}
+.sub-sub-menu__column img {
+  width: 100%;
+}
+.sub-sub-menu__items {
+}
+.sub-sub-menu__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5; /* 24/16 */
+  color: #637381;
+}
+.sub-sub-menu__item:hover {
+  color: #3056D3;;
+}
+.sub-sub-menu__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.sub-sub-menu__item_label {
+  font-weight: 600;
+  color: #212B36;
+  margin-bottom: 20px;
+}
+
+
