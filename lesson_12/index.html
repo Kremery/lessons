@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson_12</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">CSS transform. 2D і 3D трансформації</h1>
+      </div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <section class="page__about about">
+          <h2 class="about__title title">Що таке 2D та 3D трансформації?</h2>
+          <div class="about__text text">
+            За допомогою 2D та 3D трансформації ми зможемо зрушувати, повертати, масштабувати елементи та робити багато іншого! Задається трансформація властивістю transform та наступними значеннями:
+          </div>
+        </section>
+        <section class="page__content content">
+          <div class="content__item item-content translate">
+            <h3 class="translate__title title">Translate (x, y)</h3>
+            <div class="translate__text text">
+              Зміщує елемент на нове місце, переміщаючи відносно початкового положення об'єкта вправо та вниз, використовуючи координати X та Y. Записується так translate (x,y).
+            </div>
+            <div class="translate__wrapp wrapp">
+              <div class="translate__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content scale">
+            <h3 class="scale__title title">Scale (x, y)</h3>
+            <div class="scale__text text">
+              Масштабує елементи, роблячи їх більшими або меншими.</div>
+            <div class="scale__wrapp wrapp">
+              <div class="scale__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content rotate">
+            <h3 class="rotate__title title">Rotate (n+deg)</h3>
+            <div class="rotate__text text">Повертає елементи.</div>
+            <div class="rotate__wrapp wrapp">
+              <div class="rotate__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content skew">
+            <h3 class="skew__title title">Skew (x + deg, y + deg)</h3>
+            <div class="skew__text text">Деформує (нахиляє) елементи.</div>
+            <div class="skew__wrapp wrapp">
+              <div class="skew__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content matrix">
+            <h3 class="matrix__title title">Matrix (a, c, b, d, x, y)</h3>
+            <div class="matrix__text text">Дозволяє об'єднати кілька функцій 2D-трансформацій в одній. <br>Значення a змінює масштаб по горизонталі. Значення від 0 до 1 зменшує елемент, більше 1 збільшує. Значення c деформує (зсуває) сторони елемента по осі Y, позитивне значення – вгору, негативне – вниз. Значення b деформує (зсуває) сторони елемента по осі X, позитивне значення – вліво, негативне – вправо. Значення d змінює масштаб за вертикаллю. Значення менше 1 зменшує елемент, більше 1 збільшує. Значення x зміщує елемент по осі X, позитивне вправо, негативне вліво. Значення yзміщує елемент по осі Y, позитивне значення вниз, негативне вгору.</div>
+            <div class="matrix__wrapp wrapp">
+              <div class="matrix__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content transfomations">
+            <h3 class="transfomations__title title">Множинні 2D трансформації</h3>
+            <div class="transfomations__text text">Дозволяє об'єднати кілька функцій 2D-трансформацій в одній.</div>
+            <div class="transfomations__wrapp wrapp">
+              <div class="transfomations__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content transfomation-origin">
+            <h3 class="transfomation-origin__title title">Transform-origin</h3>
+            <div class="transfomation-origin__text text">Дозволяє змістити центр трансформації, щодо якого відбувається зміна положення/розміру/форми елемента.</div>
+            <div class="transfomation-origin__wrapp wrapp">
+              <div class="transfomation-origin__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content perspective">
+            <h3 class="perspective__title title">Perspective, perspective-origin</h3>
+            <div class="perspective__text text">Встановлення глибини та зміна точки початку координат.</div>
+            <div class="perspective__wrapp wrapp">
+              <div class="perspective__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content translate3d">
+            <h3 class="translate3d__title title">Translate3d (x, y, z)</h3>
+            <div class="translate3d__text text">За аналогією зі своїм 2D братом, це значення визначає переміщення елемента, але в 3D-просторі. Крім осі X та Y додається вісь Z.</div>
+            <div class="translate3d__wrapp wrapp">
+              <div class="translate3d__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content scale3d">
+            <h3 class="scale3d__title title">Scale3d (x, y, z)</h3>
+            <div class="scale3d__text text">Задає тривимірне масштабування однією з осей XY Z. Фактично повторює функціонал свого 2d аналога.</div>
+            <div class="scale3d__wrapp wrapp">
+              <div class="scale3d__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content rotate3d">
+            <h3 class="rotate3d__title title">Rotate3d (x, y, z, deg)</h3>
+            <div class="rotate3d__text text">Обертає елемент щодо трьох осей. Елемент повертається під кутом, що задається останнім параметром щодо вектора напрямку x, y, z.</div>
+            <div class="rotate3d__wrapp wrapp">
+              <div class="rotate3d__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content transfomations3d">
+            <h3 class="transfomations3d__title title">Множинні 3D трансформації</h3>
+            <div class="transfomations3d__text text">Дозволяє поєднати кілька функцій 3D-трансформацій в одній.</div>
+            <div class="transfomations3d__wrapp wrapp">
+              <div class="transfomations3d__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content transform-style">
+            <h3 class="transform-style__title title">Transform-style</h3>
+            <div class="transform-style__text text">Визначає, як дочірні елементи мають відображатися у 3D-просторі.</div>
+            <div class="transform-style__wrapp wrapp">
+              <div class="transform-style__value value"></div>
+            </div>
+          </div>
+          <div class="content__item item-content backface-visibility">
+            <h3 class="backface-visibility__title title">Backface-visibility</h3>
+            <div class="backface-visibility__text text">Відображення зворотного боку об'єкта.</div>
+            <div class="backface-visibility__wrapp wrapp">
+              <div class="backface-visibility__value value">visible</div>
+            </div>
+          </div>
+        </section>
+        <section class="page__auto auto">
+          <div class="auto__body">
+            <h2 class="auto__title title">Автомобіль</h2>
+            <div class="auto__header">
+              <div class="auto__window auto__window_left"></div>
+              <div class="auto__window auto__window_right"></div>
+            </div>
+            
+            <div class="auto__main">
+              <div class="auto__light-back"></div>
+              <div class="auto__light-front"></div>
+              
+            </div>
+            
+            <div class="auto__wheel wheel">
+              <div class="wheel__item wheel__item_1"></div>
+              <div class="wheel__item wheel__item_2"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
