@@ -367,6 +367,9 @@ body {
 .line-radio__input:checked + .line-radio__label::before {
 	border: 3px solid #000000;
 }
+.line-radio__input:checked + .line-radio__label {
+  font-weight: 600;
+}
 
 .line-radio__label::before {
 	content: "";
