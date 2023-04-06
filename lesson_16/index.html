@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 16</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
+
+    <main class="page">
+      <div class="page__container">
+        <div class="page__billing billing">
+          <form action="#" class="billing__form form-billing">
+            <div class="form-billing__title title">Billing Details</div>
+            <div class="form-billing__items">
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="First name*" name="first-name" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Last name*" name="last-name" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Address*" name="address" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" autocomplete="off" placeholder="Address line 2" name="address-line-2" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <!-- <input class="form-billing__input form-billing__input-select" required autocomplete="off" placeholder="Country*" name="country" type="text" > -->
+                <select class="form-billing__input form-billing__input-select" name="list">
+                  <option class="form-billing__select" value="1">Country*</option>
+                  <option class="form-billing__select" value="2">Ukrane</option>
+                  <option class="form-billing__select" value="3">England</option>
+                  <option class="form-billing__select" value="4">USA</option>
+                  <option class="form-billing__select" value="5">Poland</option>
+                </select>
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="City/Town*" name="city" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Postcode / ZIP*" name="postcode" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Phone*" name="phone" type="tel" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Postcode / ZIP*" name="postcode-2" type="text" >
+              </div>
+              <div class="form-billing__item">
+                <input class="form-billing__input" required autocomplete="off" placeholder="Phone*" name="phone2" type="tel" >
+              </div>
+              <div class="form-billing__item form-billing__item-textarea">
+                <textarea class="form-billing__textarea" autocomplete="off" placeholder="Additional information" name="message"></textarea>
+              </div>
+            </div>
+            <div class="form-billing__checkbox checkbox">
+              <div class="checkbox__line">
+                <input type="checkbox" checked id="checkbox-01" value="yes" name="account" class="checkbox__input">
+                <label for="checkbox-01" class="checkbox__label">Create Account</label>
+              </div>
+              <div class="checkbox__line">
+                <input type="checkbox" id="checkbox-02" value="yes" name="account" class="checkbox__input">
+                <label for="checkbox-02" class="checkbox__label">Ship to a different address?</label>
+              </div>
+            </div>
+          </form>
+          <form action="#" class="billing__form form-coupon">
+            <div class="form-coupon__title title">Apply Coupon to get discount!</div>
+            <div class="form-coupon__items">
+              <div class="form-coupon__line form-coupon__line-value">
+                <input type="text" name="coupon" class="form-coupon__input" autocomplete="off" placeholder="Coupon code*" required>
+              </div>
+              <div class="form-coupon__line form-coupon__line-button">
+                <button class="form-coupon__button" type="submit">Apply Code</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+        <div class="page__shipping shipping">
+          <div class="shipping__container-shipping">
+            <div class="shipping__address address">
+              <form action="#" class="address__form form-address">
+                <div class="form-address__title title-shipping">Shipping Address</div>
+                <div class="form-address__items">
+                  <div class="form-address__line">
+                    <label for="mail-01" class="form-address__label">Email Address <span>*</span></label>
+                    <input name="mail" type="email" id="mail-01" required class="form-address__item" placeholder="roni_cost@example.com">
+                  </div>
+                  <div class="form-address__line">
+                    <label class="form-address__label">Password</label>
+                    <input name="userpass" type="password" class="form-address__item" placeholder="******************">
+                  </div>
+                  <div class="form-address__line">
+                    <label for="usercode-01" class="form-address__label">Zip/Postal Code</label>
+                    <input type="text" id="usercode-01" class="form-address__item">
+                  </div>
+                </div>
+                <div class="form-address__text">You already have an account with us. Sign in or continue as guest.</div>
+                <div class="form-address__block-button">
+                  <button class="form-address__button button-form" type="submit">login</button>
+                  <a href="#" class="form-address__link">Forgot Your Password?</a>
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">First Name <span>*</span></label>
+                  <input name="first-name" required type="text" class="form-address__item" >
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">Last Name <span>*</span></label>
+                  <input name="last-name" type="text" required class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">Company</label>
+                  <input name="company" type="text" class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">Street Address <span>*</span></label>
+                  <input name="address-1" type="text" required class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label"></label>
+                  <input name="address-2" type="text" class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label"></label>
+                  <input name="address-3" type="text" class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">Country <span>*</span></label>
+                  <input name="country" type="text" required class="form-address__item">
+                </div>
+                <div class="form-address__line">
+                  <label class="form-address__label">State/Province <span>*</span></label>
+                  <select class="form-address__item form-address__item-select" name="list-state">
+                    <option  class="form-address__select" value="1">Please select a region, state or province</option>
+                    <option class="form-address__select" value="2">Value-2</option>
+                    <option class="form-address__select" value="3">Value-3</option>
+                    <option class="form-address__select" value="4">Value-4</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <div class="shipping__methods methods">
+              <form action="#" class="methods__form form-methods">
+                <div class="form-methods__title title-shipping">Shipping Methods</div>
+                <div class="form-methods__radio radio">
+                  <div class="radio__line line-radio">
+                    <div class="line-radio__item line-radio__item_flex">
+                      <input type="radio" class="line-radio__input" id="radio-01" checked value="5" name="price">
+                      <label for="radio-01" class="line-radio__label">$5.00</label>
+                    </div>
+                    <a href="#" class="line-radio__item">Fixed</a>
+                    <a href="#" class="line-radio__item">Flat Rate</a>
+
+                  </div>
+                  <div class="radio__line line-radio">
+                    <div class="line-radio__item line-radio__item_flex">
+                      <input type="radio" class="line-radio__input" id="radio-02" value="5" name="price">
+                      <label for="radio-02" class="line-radio__label">$10.00</label>
+                    </div>
+                    <a href="#" class="line-radio__item">Table Rate</a>
+                    <a href="#" class="line-radio__item">Best Way</a>
+                  </div>
+                </div>
+
+                <div class="form-methods__footer">
+                  <button class="form-methods__button button-form">next</button>
+                  <a href="#" class="form-methods__link"></a>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      
+    </main>
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>
