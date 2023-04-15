@@ -1,0 +1,372 @@
+@import url('reset.css');
+@import url('common.css');
+
+/* ---------------- */
+/*----------------- Підключення шрифтів ----------------------- */
+
+/* Підключення вручну */
+
+/* допиши &display=swap */
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+} 
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #9C9C9C;
+}
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 140%;
+  color: #000000;
+  text-align: center;
+}
+.page {
+  
+}
+.page__achievement,
+.page__minimalist {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* -------------------------- */
+
+.achievement {
+}
+.achievement__container {
+}
+.achievement__header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.achievement__header:not(:last-child) {
+  margin-bottom: 40px;
+}
+.achievement__header::after {
+  content: "";
+  display: inline-block;
+  background-color: #000000;
+  margin-left: 10px;
+  width: 464px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.achievement__body {
+}
+.achievement__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+  gap: 10px;
+}
+.achievement__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.achievement__image {
+  flex: 0 0 63.75%; /* 765/1200 */
+  /* flex: 0 0 765px; */
+  position: relative;
+	padding-bottom: 30.416667%; /* 365/1200 */
+}
+.achievement__image img{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.achievement__content {
+  flex-grow: 1;
+  max-width: 335px;
+}
+.achievement__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
+}
+.achievement__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+.achievement__text {
+}
+
+@media (max-width: 997.98px) {
+  .page__achievement {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .achievement__image {
+    padding-bottom: 48%;
+  }
+  .achievement__image:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .achievement__item {
+    display: block;
+  }
+  .achievement__content {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+@media (max-width: 619.98px) {
+  .page__achievement {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .achievement__header::after {
+    width: 200%;
+  }
+  .achievement__header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .achievement__text {
+    font-size: 16px;
+  }
+  .achievement__image {
+    padding-bottom: 60%; 
+  }
+}
+@media (max-width: 374px) {
+  .page__achievement {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .achievement__header::after {
+    width: 100%;
+  }
+  .achievement__header:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .achievement__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .achievement__image:not(:last-child) {
+    margin-bottom: 15px;
+}
+  .achievement__title:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .achievement__text {
+    font-size: 14px;
+  }
+}
+/* -------------------------- */
+
+.minimalist {
+}
+.minimalist__container {
+}
+.minimalist__title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.minimalist__subtitle {
+  text-align: center;
+  color: #000000;
+  max-width: 520px;
+  margin: 0 auto 50px;
+}
+.minimalist__body {
+}
+.room-minimalist {
+}
+.room-minimalist__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -16px;
+  row-gap: 32px;
+}
+.room-minimalist__wrap {
+  flex: 0 0 50%;
+  padding: 0 16px;
+}
+.room-minimalist__image {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 513px;
+}
+.room-minimalist__item:not(.item-text):hover img{
+  transform: scale(1.05);
+}
+.room-minimalist__wrap_big {
+  flex: 0 0 100%;
+}
+.room-minimalist__image img {
+  /* max-width: 100%; */
+  transition: transform 0.5s ease 0s;
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.item-text {
+  min-height: 313px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+  margin-bottom: 49px;
+  gap: 30px;
+}
+.item-text__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
+}
+.item-text__title:not(:last-child) {
+  margin-bottom: 24px;
+}
+.item-text__content {
+  flex: 1 1 auto;
+}
+.item-text__content p:not(:last-child){
+  margin-bottom: 30px;
+}
+.item-text__sign {
+}
+.item-text__data {
+  display: inline-block;
+  margin-right: 80px;
+}
+.item-text__name {
+  display: inline-block;
+}
+
+@media (max-width: 997.98px) {
+  .page__minimalist {
+    border-top: 1px solid #000; ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .minimalist__title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .minimalist__title {
+    font-size: 48px;
+  }
+  .minimalist__subtitle {
+    margin-bottom: 30px;
+  }
+  .room-minimalist__wrap {
+    flex: 0 0 100%;
+  }
+  .room-minimalist__image {
+    padding-bottom: 45%;
+  }
+  .item-text {
+    min-height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 20px;
+  }
+  .item-text__title:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__minimalist {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .room-minimalist__items {
+    display: block;
+    /* margin: 0x;
+    row-gap: 20px; */
+  }
+  .room-minimalist__wrap {
+    /* flex: 0 0 100%;
+    padding: 0; */
+    margin-bottom: 20px;
+  }
+  .room-minimalist__image {
+    padding-bottom: 67%;
+  }
+  .item-text {
+    gap: 10px;
+  }
+}
+@media (max-width: 619.98px) {
+  .minimalist__title {
+    font-size: 42px;
+  }
+  .minimalist__title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .minimalist__subtitle {
+    margin: 0 auto 20px;
+    font-size: 16px;
+  }
+  .room-minimalist__image {
+    padding-bottom: 87%;
+  }
+}
+@media (max-width: 410px) {
+  .page__minimalist {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .minimalist__title {
+    font-size: 36px;
+  }
+  .minimalist__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .minimalist__subtitle {
+    margin: 0 auto 15px;
+    font-size: 14px;
+  }
+  .item-text__title {
+    font-size: 20px;
+  }
+  .item-text__content {
+    font-size: 16px;
+  }
+  
+}
+@media (max-width: 374px) {
+  .minimalist__title {
+    font-size: 32px;
+  }
+  .minimalist__title:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .minimalist__subtitle {
+    margin: 0 auto 10px;
+    font-size: 12px;
+  }
+}
